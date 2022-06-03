@@ -5,19 +5,19 @@ App = {
   init: async function() {
     // Load pets.
     $.getJSON('../rides.json', function(data) {
-      var petsRow = $('#petsRow');
-      var petTemplate = $('#petTemplate');
+      var petsRow = $('#ridesRow');
+      var rideTemplate = $('#rideTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].user);
-        petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.ride-startTime').text(data[i].startTime);
-        petTemplate.find('.ride-endTime').text(data[i].endTime);
-        petTemplate.find('.ride-positions').text(data[i].positions);
-        petTemplate.find('.ride-destination').text(data[i].destination);
-        petTemplate.find('.ride-cost').text(data[i].cost);
-        petTemplate.find('.btn-reserve').attr('data-id', data[i].id);
-        petsRow.append(petTemplate.html());
+        rideTemplate.find('.panel-title').text(data[i].user);
+        rideTemplate.find('img').attr('src', data[i].picture);
+        rideTemplate.find('.ride-startTime').text(data[i].startTime);
+        rideTemplate.find('.ride-endTime').text(data[i].endTime);
+        rideTemplate.find('.ride-positions').text(data[i].positions);
+        rideTemplate.find('.ride-destination').text(data[i].destination);
+        rideTemplate.find('.ride-cost').text(data[i].cost);
+        rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
+        petsRow.append(rideTemplate.html());
       }
     });
 

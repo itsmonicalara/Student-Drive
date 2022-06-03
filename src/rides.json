@@ -2,7 +2,7 @@
     {
         "id": 0,
         "user": "user0",
-        "picture": "https://picsum.photos/200/300/?random",
+        "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "endTime": "2019-01-01T00:00:00.000Z",
         "positions": 3,
@@ -12,7 +12,7 @@
     {
         "id": 1,
         "user": "user1",
-        "picture": "https://picsum.photos/200/300/?random",
+        "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "endTime": "2019-01-01T00:00:00.000Z",
         "positions": 2,
@@ -22,7 +22,7 @@
     {
         "id": 2,
         "user": "user2",
-        "picture": "https://picsum.photos/200/300/?random",
+        "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "endTime": "2019-01-01T00:00:00.000Z",
         "positions": 1,
@@ -32,7 +32,7 @@
     {
         "id": 3,
         "user": "user3",
-        "picture": "https://picsum.photos/200/300/?random",
+        "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "endTime": "2019-01-01T00:00:00.000Z",
         "positions": 4,
