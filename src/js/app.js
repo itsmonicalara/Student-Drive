@@ -9,14 +9,14 @@ App = {
       var rideTemplate = $('#rideTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        rideTemplate.find('.panel-title').text(data[i].user);
+        rideTemplate.find('.card-title').text(data[i].user);
         rideTemplate.find('img').attr('src', data[i].picture);
         rideTemplate.find('.ride-startTime').text(data[i].startTime);
         rideTemplate.find('.ride-endTime').text(data[i].endTime);
         rideTemplate.find('.ride-positions').text(data[i].positions);
         rideTemplate.find('.ride-destination').text(data[i].destination);
         rideTemplate.find('.ride-cost').text(data[i].cost);
-        rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
+        rideTemplate.find('.btn-primary').attr('data-id', data[i].id);
         petsRow.append(rideTemplate.html());
       }
     });
@@ -68,7 +68,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-reserve', App.handleAdopt);
+    $(document).on('click', '.btn-primary', App.handleAdopt);
   },
 
   markAdopted: function() {
