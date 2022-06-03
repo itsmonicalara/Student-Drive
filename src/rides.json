@@ -28,5 +28,15 @@
         "positions": 1,
         "destination": "Santa Fe",
         "cost": "10"
+    },
+    {
+        "id": 3,
+        "user": "user3",
+        "picture": "https://picsum.photos/200/300/?random",
+        "startTime": "2019-01-01T00:00:00.000Z",
+        "endTime": "2019-01-01T00:00:00.000Z",
+        "positions": 4,
+        "destination": "Coapa",
+        "cost": "12"
     }
 ]

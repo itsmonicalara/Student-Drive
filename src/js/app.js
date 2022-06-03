@@ -4,18 +4,19 @@ App = {
 
   init: async function() {
     // Load pets.
-    $.getJSON('../pets.json', function(data) {
+    $.getJSON('../rides.json', function(data) {
       var petsRow = $('#petsRow');
       var petTemplate = $('#petTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('.panel-title').text(data[i].user);
         petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
-
+        petTemplate.find('.ride-startTime').text(data[i].startTime);
+        petTemplate.find('.ride-endTime').text(data[i].endTime);
+        petTemplate.find('.ride-positions').text(data[i].positions);
+        petTemplate.find('.ride-destination').text(data[i].destination);
+        petTemplate.find('.ride-cost').text(data[i].cost);
+        petTemplate.find('.btn-reserve').attr('data-id', data[i].id);
         petsRow.append(petTemplate.html());
       }
     });
@@ -67,7 +68,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-reserve', App.handleAdopt);
   },
 
   markAdopted: function() {
