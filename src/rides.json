@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "user": "user0",
+        "picture": "https://picsum.photos/200/300/?random",
+        "startTime": "2019-01-01T00:00:00.000Z",
+        "endTime": "2019-01-01T00:00:00.000Z",
+        "positions": 3,
+        "destination": "Tlalpan",
+        "cost": "5"
+    },
+    {
+        "id": 1,
+        "user": "user1",
+        "picture": "https://picsum.photos/200/300/?random",
+        "startTime": "2019-01-01T00:00:00.000Z",
+        "endTime": "2019-01-01T00:00:00.000Z",
+        "positions": 2,
+        "destination": "Del Valle",
+        "cost": "8"
+    },
+    {
+        "id": 2,
+        "user": "user2",
+        "picture": "https://picsum.photos/200/300/?random",
+        "startTime": "2019-01-01T00:00:00.000Z",
+        "endTime": "2019-01-01T00:00:00.000Z",
+        "positions": 1,
+        "destination": "Santa Fe",
+        "cost": "10"
+    }
+]
