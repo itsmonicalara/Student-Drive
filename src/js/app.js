@@ -3,22 +3,23 @@ App = {
   contracts: {},
 
   init: async function() {
-    // Load pets.
+    // Load rides.
     $.getJSON('../rides.json', function(data) {
-      var petsRow = $('#ridesRow');
+      var ridesRow = $('#ridesRow');
       var rideTemplate = $('#rideTemplate');
 
       for (i = 0; i < data.length; i ++) {
         rideTemplate.find('.card-title').text(data[i].user);
         rideTemplate.find('img').attr('src', data[i].picture);
         rideTemplate.find('.ride-startTime').text(data[i].startTime);
-        rideTemplate.find('.ride-endTime').text(data[i].endTime);
         rideTemplate.find('.ride-positions').text(data[i].positions);
         rideTemplate.find('.ride-destination').text(data[i].destination);
-        rideTemplate.find('.ride-cost').text(data[i].cost);
+        rideTemplate.find('.ride-cost').text(data[i].cost);      
+        rideTemplate.find('.ride-sec').text(data[i].seconds);
         rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
-        petsRow.append(rideTemplate.html());
+        ridesRow.append(rideTemplate.html());
       }
+
     });
 
     return await App.initWeb3();
@@ -59,7 +60,7 @@ App = {
       // Set the provider for our contract
       App.contracts.Reservation.setProvider(App.web3Provider);
     
-      // Use our contract to retrieve and mark the adopted pets
+      // Use our contract to retrieve and mark the booked reservations
       return App.markReserved();
     });
     
@@ -81,7 +82,7 @@ App = {
     }).then(function(riders) {
       for (i = 0; i < riders.length; i++) {
         if (riders[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.card').eq(i).find('button').text('Success').attr('disabled', true);
+          $('.card').eq(i).find('button').text('Booked!').attr('disabled', true);
         }
       }
     }).catch(function(err) {
