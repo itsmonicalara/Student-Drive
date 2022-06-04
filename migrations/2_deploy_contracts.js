@@ -1,5 +1,5 @@
-var Adoption = artifacts.require("Adoption");
+var Reservation = artifacts.require("Reservation");
 
 module.exports = function(deployer) {
-  deployer.deploy(Adoption);
+  deployer.deploy(Reservation);
 };
