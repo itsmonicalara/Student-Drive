@@ -16,7 +16,7 @@ App = {
         rideTemplate.find('.ride-positions').text(data[i].positions);
         rideTemplate.find('.ride-destination').text(data[i].destination);
         rideTemplate.find('.ride-cost').text(data[i].cost);
-        rideTemplate.find('.btn-primary').attr('data-id', data[i].id);
+        rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
         petsRow.append(rideTemplate.html());
       }
     });
@@ -25,7 +25,7 @@ App = {
   },
 
   initWeb3: async function() {
-          // Modern dapp browsers...
+      // Modern dapp browsers...
       if (window.ethereum) {
         App.web3Provider = window.ethereum;
         try {
@@ -68,7 +68,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-primary', App.handleReserve);
+    $(document).on('click', '.btn-reserve', App.handleReserve);
   },
 
   markReserved: function() {

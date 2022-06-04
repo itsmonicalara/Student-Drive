@@ -38,15 +38,5 @@
         "positions": 4,
         "destination": "Coapa",
         "cost": "12"
-    },
-    {
-        "id": 4,
-        "user": "user4",
-        "picture": "https://picsum.photos/140/140/?random",
-        "startTime": "2019-01-01T00:00:00.000Z",
-        "endTime": "2019-01-01T00:00:00.000Z",
-        "positions": 2,
-        "destination": "Neza",
-        "cost": "7"
     }
 ]

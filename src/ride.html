@@ -77,7 +77,7 @@
           <br></br>
           <h1 class="text-center">Tec Ride</h1>
           <p class="text-center">
-            The new way to travel.
+            Insert the necessary information to add a new ride
           </p>
           <hr/>
         </div>
@@ -85,39 +85,34 @@
     </div>
     <!-- Title section ends -->
 
-    <!-- Main section starts -->
+    <!-- Form section starts -->
     <div class="container">
-      <div id="ridesRow" class="row">
-      </div>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-    <!-- Main section ends -->
 
-    <!-- Card section starts -->
-    <div id="rideTemplate" style="display: none;">
-      <div class="col-md-3 mb-4">
-
-        <div class="card" style="width: 18rem;">
-          <img src="./images/boxer.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">User 0</h5>
-            <strong>Start time</strong>: <span class="ride-startTime">6/03/2022 20:12:34</span><br/>
-            <strong>End time</strong>: <span class="ride-endTime">6/03/2022 21:00:00</span><br/>
-            <strong>Positions</strong>: <span class="ride-positions">3</span><br/>
-            <strong>Destination</strong>: <span class="ride-destination">La Narvarte</span><br/>
-            <strong>Cost</strong>: <span class="ride-cost">0.05</span> ETH<br/><br/>
-            <button class="btn btn-primary btn-reserve" type="button" data-id="0">Reserve</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- Card sections ends -->
-
-    <!-- Add a new card -->
+    <!-- Form sections ends -->
+   
+    <!-- Add a new card section -->
     <!-- Insert info into the rides.json using NodeJS -->
 
 
-    <!-- End of add a new card -->
+
+    <!-- End of add a new card section -->
     
 
     
