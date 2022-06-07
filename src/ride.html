@@ -88,15 +88,10 @@
 
     <!-- Form section starts -->
     <div class="container">
-        <form>
-            <!-- Here goes the time picker form -->
-            <!-- <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Start time</label>
-              <input class="form-control" id="exampleInputEmail1">
-            </div> -->
+        <form method="post">
             <div class="mb-3">
                 <label for="inputTime" class="form-label">Start time</label><br/>
-                <input type="time" id="inputTime" name="appt" min="09:00" max="18:00" required>
+                <input type="time" id="inputTime" name="appt" required>
             </div>     
             <div class="mb-3">
                 <label for="inputPicture" class="form-label">Picture</label>
@@ -117,7 +112,12 @@
             </div>
             <div class="mb-3">
                 <label for="inputCost" class="form-label">Cost</label>
-                <input type="number" class="form-control" id="inputCost">
+                <input type="number" step="0.01" class="form-control" id="inputCost">
+            </div>
+            <div class="mb-3">
+              <label for="inputDescription" class="form-label">Description</label>
+              <input type="text" class="form-control" id="inputDescription">
+
             </div>
             <button type="submit" class="btn btn-primary">Agregar</button>
         </form>
@@ -140,6 +140,39 @@
 
     <!-- Test JSON insertion -->
     <script type="text/javascript">
+      // Insert data to mongo with form
+      $("form").submit(function(event) {
+        event.preventDefault();
+        var time = $("#inputTime").val();
+        var picture = $("#inputPicture").val();
+        var positions = $("#inputPositions").val();
+        var destination = $("#inputDestination").val();
+        var cost = $("#inputCost").val();
+        var description = $("#inputDescription").val();
+        var data = {
+          offerStartTime: time,
+          offerImage: picture,
+          offerPositions: positions,
+          offerDestination: destination,
+          offerCost: cost,
+          offerDescription: description,
+          offerSeconds: Math.floor(Math.random() * 900) + 60
+        };
+        var dataJSON = JSON.stringify(data);
+        $.ajax({
+          type: "POST",
+          url: "http://localhost:4000/tec-ride/add",
+          data: dataJSON,
+          success: function(data) {
+            console.log(data);
+          },
+          error: function(data) {
+            console.log(data);
+          },
+          dataType: "json",
+          contentType: "application/json"
+        });
+      });
 
     </script>
     <!-- End of Test JSON insertion -->
