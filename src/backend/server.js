@@ -42,8 +42,6 @@ offerRoutes.route('/add').post(function(req, res) {
         });
 });
 
-
-
 app.use('/tec-ride', offerRoutes);
 
 app.listen(PORT, function() {

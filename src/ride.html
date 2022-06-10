@@ -140,6 +140,9 @@
 
     <!-- Test JSON insertion -->
     <script type="text/javascript">
+      
+
+
       // Insert data to mongo with form
       $("form").submit(function(event) {
         event.preventDefault();
@@ -150,6 +153,7 @@
         var cost = $("#inputCost").val();
         var description = $("#inputDescription").val();
         var data = {
+          offerUser: "0xBd2e8245A16344d0e1a040b7fD061917733BBD0f",
           offerStartTime: time,
           offerImage: picture,
           offerPositions: positions,
@@ -173,8 +177,6 @@
           contentType: "application/json"
         });
       });
-      
-
     </script>
     <!-- End of Test JSON insertion -->
   </body>
