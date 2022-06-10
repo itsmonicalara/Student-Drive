@@ -32,7 +32,7 @@ App = {
           var ridesRow = $('#mongoRow');
           var rideTemplate = $('#mongoTemplate');
           for (i = 0; i < data.length; i ++) {
-            rideTemplate.find('.title').text(data[i]._id);
+            rideTemplate.find('.title').text(data[i].offerUser);
             rideTemplate.find('img').attr('src', data[i].offerImage);
             rideTemplate.find('.startTime').text(data[i].offerStartTime);
             rideTemplate.find('.positions').text(data[i].offerPositions);

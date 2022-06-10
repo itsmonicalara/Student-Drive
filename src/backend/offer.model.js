@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let Offer = new Schema({
+    offerUser : {
+        type: String,
+        required: true
+    },
     offerStartTime : {
         type: String,
         required: true
