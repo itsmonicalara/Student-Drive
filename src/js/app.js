@@ -16,8 +16,7 @@ App = {
         rideTemplate.find('.ride-destination').text(data[i].destination);
         rideTemplate.find('.ride-cost').text(data[i].cost);
         rideTemplate.find('.ride-description').text(data[i].description);
-        // rideTemplate.find('.ride-sec').text(sec);
-        rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
+        rideTemplate.find('.btn-reserve').attr('data-id', data[i].cost);
         ridesRow.append(rideTemplate.html());
       }
 
@@ -40,7 +39,7 @@ App = {
             rideTemplate.find('.destination').text(data[i].offerDestination);
             rideTemplate.find('.cost').text(data[i].offerCost);  
             rideTemplate.find('.description').text(data[i].offerDescription);
-            rideTemplate.find('.btn-reserve').attr('data-id', data[i]._id);
+            rideTemplate.find('.btn-reserve').attr('data-id', data[i].offerCost);
             ridesRow.append(rideTemplate.html());
           }
         }
