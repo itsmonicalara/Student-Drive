@@ -7,7 +7,7 @@
         "positions": 3,
         "destination": "Tlalpan",
         "cost": "5",
-        "seconds": 500
+        "seconds": 150
     },
     {
         "id": 1,
@@ -17,7 +17,7 @@
         "positions": 2,
         "destination": "Del Valle",
         "cost": "8",
-        "seconds": 500
+        "seconds": 300
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
         "positions": 1,
         "destination": "Santa Fe",
         "cost": "10",
-        "seconds": 500
+        "seconds": 800
     },
     {
         "id": 3,
@@ -37,7 +37,6 @@
         "positions": 4,
         "destination": "Coapa",
         "cost": "12",
-        "seconds": 500
+        "seconds": 120
     }
-
 ]

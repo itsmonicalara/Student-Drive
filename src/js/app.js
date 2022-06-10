@@ -14,8 +14,9 @@ App = {
         rideTemplate.find('.ride-startTime').text(data[i].startTime);
         rideTemplate.find('.ride-positions').text(data[i].positions);
         rideTemplate.find('.ride-destination').text(data[i].destination);
-        rideTemplate.find('.ride-cost').text(data[i].cost);      
-        rideTemplate.find('.ride-sec').text(data[i].seconds);
+        rideTemplate.find('.ride-cost').text(data[i].cost);  
+        sec = data[i].seconds    
+        rideTemplate.find('.ride-sec').text(sec);
         rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
         ridesRow.append(rideTemplate.html());
       }
