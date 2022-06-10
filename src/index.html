@@ -104,7 +104,8 @@
             <strong>Positions</strong>: <span class="ride-positions">3</span><br/>
             <strong>Destination</strong>: <span class="ride-destination">La Narvarte</span><br/>
             <strong>Cost</strong>: <span class="ride-cost">0.05</span> ETH<br/>
-            <strong>Timer</strong>: <span class="ride-sec" id="minutes"></span>:<span id="seconds"></span><br/><br/>
+            <span>Description</span>: <span class="text-muted ride-description">Something important</span><br/><br/>
+            <!-- <strong>Timer</strong>: <span class="ride-sec" id="minutes"></span>:<span id="seconds"></span><br/><br/> -->
             <button class="btn btn-success btn-reserve" type="button" data-id="0">Reserve</button>
           </div>
         </div>
@@ -134,9 +135,9 @@
             <strong>Positions</strong>: <span class="positions">3</span><br/>
             <strong>Destination</strong>: <span class="destination">La Narvarte</span><br/>
             <strong>Cost</strong>: <span class="cost">0.05</span> ETH<br/>
-            <strong>Description</strong>: <span class="description">Something important</span><br/><br/>
+            <span>Description</span>: <span class="text-muted description">Something important</span><br/><br/>
 
-            <a href="#" class="btn btn-primary">Reserve</a>
+            <a href="#" class="btn btn-primary btn-reserve">Reserve</a>
           </div>
         </div> 
 
@@ -156,31 +157,6 @@
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
     <script src="js/index.js"></script>
-    <!-- Get offer routes from mongoose -->
-    <script>
-      var getRides = function() {
-        $.ajax({
-          url: 'http://localhost:4000/tec-ride/',
-          type: 'GET',
-          success: function(data) {
-            console.log(data);
-            var ridesRow = $('#mongoRow');
-            var rideTemplate = $('#mongoTemplate');
-            for (i = 0; i < data.length; i ++) {
-              rideTemplate.find('.title').text(data[i]._id);
-              rideTemplate.find('img').attr('src', data[i].offerImage);
-              rideTemplate.find('.startTime').text(data[i].offerStartTime);
-              rideTemplate.find('.positions').text(data[i].offerPositions);
-              rideTemplate.find('.destination').text(data[i].offerDestination);
-              rideTemplate.find('.cost').text(data[i].offerCost);  
-              // rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
-              ridesRow.append(rideTemplate.html());
-            }
-          }
-        });
-      }
-      getRides();
-    </script>
 
   </body>
 </html>

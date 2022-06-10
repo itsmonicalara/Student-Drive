@@ -3,7 +3,7 @@ App = {
   contracts: {},
 
   init: async function() {
-    // Load rides.
+    // Load JSON rides.
     $.getJSON('../rides.json', function(data) {
       var ridesRow = $('#ridesRow');
       var rideTemplate = $('#rideTemplate');
@@ -14,14 +14,39 @@ App = {
         rideTemplate.find('.ride-startTime').text(data[i].startTime);
         rideTemplate.find('.ride-positions').text(data[i].positions);
         rideTemplate.find('.ride-destination').text(data[i].destination);
-        rideTemplate.find('.ride-cost').text(data[i].cost);  
-        sec = data[i].seconds    
-        rideTemplate.find('.ride-sec').text(sec);
+        rideTemplate.find('.ride-cost').text(data[i].cost);
+        rideTemplate.find('.ride-description').text(data[i].description);
+        // rideTemplate.find('.ride-sec').text(sec);
         rideTemplate.find('.btn-reserve').attr('data-id', data[i].id);
         ridesRow.append(rideTemplate.html());
       }
 
     });
+
+    // Load Mongo rides.
+    var getRides = function() {
+      $.ajax({
+        url: 'http://localhost:4000/tec-ride/',
+        type: 'GET',
+        success: function(data) {
+          console.log(data);
+          var ridesRow = $('#mongoRow');
+          var rideTemplate = $('#mongoTemplate');
+          for (i = 0; i < data.length; i ++) {
+            rideTemplate.find('.title').text(data[i]._id);
+            rideTemplate.find('img').attr('src', data[i].offerImage);
+            rideTemplate.find('.startTime').text(data[i].offerStartTime);
+            rideTemplate.find('.positions').text(data[i].offerPositions);
+            rideTemplate.find('.destination').text(data[i].offerDestination);
+            rideTemplate.find('.cost').text(data[i].offerCost);  
+            rideTemplate.find('.description').text(data[i].offerDescription);
+            rideTemplate.find('.btn-reserve').attr('data-id', data[i]._id);
+            ridesRow.append(rideTemplate.html());
+          }
+        }
+      });
+    }
+    getRides();
 
     return await App.initWeb3();
   },

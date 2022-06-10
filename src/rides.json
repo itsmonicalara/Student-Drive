@@ -1,42 +1,46 @@
 [
     {
         "id": 0,
-        "user": "user0",
+        "user": "0xBd2e8245A16344d0e1a040b7fD061917733BBD0f",
         "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "positions": 3,
         "destination": "Tlalpan",
         "cost": "5",
+        "description": "Lorem ipsum dolor sit amet",
         "seconds": 150
     },
     {
         "id": 1,
-        "user": "user1",
+        "user": "0x4FC12f9Fd59e51319431F39b9f5fc4B394221c0b",
         "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "positions": 2,
         "destination": "Del Valle",
         "cost": "8",
+        "description": "Lorem ipsum dolor sit amet",
         "seconds": 300
     },
     {
         "id": 2,
-        "user": "user2",
+        "user": "0xEB9fE4AE1e7cD7E4E4ee8a8aF99817775f94340F",
         "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "positions": 1,
         "destination": "Santa Fe",
         "cost": "10",
+        "description": "Lorem ipsum dolor sit amet",
         "seconds": 800
     },
     {
         "id": 3,
-        "user": "user3",
+        "user": "0x11299F940cCa0efd905f98E9174728a775401231",
         "picture": "https://picsum.photos/140/140/?random",
         "startTime": "2019-01-01T00:00:00.000Z",
         "positions": 4,
         "destination": "Coapa",
         "cost": "12",
+        "description": "Lorem ipsum dolor sit amet",
         "seconds": 120
     }
 ]
