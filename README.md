@@ -4,7 +4,9 @@ Web application based on blockchain that allows users to offer and accept rides 
 ## Software Requirements 
 
 Having installed the latest version of [NodeJS](https://nodejs.org/es/download/) in your computer.
+
 Having installed and added the plugin of [Metamask](https://metamask.io/).
+
 Having installed the latest version of [Ganache](https://trufflesuite.com/ganache/).
 
 ## How to run
@@ -43,7 +45,10 @@ Once having the Metamask plugin running in a Chrome window you´ll need to do th
 ## Project Contributors
 
 Mónica Lara Pineda A01655306
+
 Omar Alejandro Robledo Rodríguez A01338010
+
 Raúl González Cardona A01654995
+
 Víctor Antonio Godínez Rodríguez A01339529
  
