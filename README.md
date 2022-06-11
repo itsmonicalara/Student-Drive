@@ -1,3 +1,4 @@
+# Tec-Ride
 
 Web application based on blockchain that allows users to offer and accept rides through a bidding system and using ethereum as currency.
 
