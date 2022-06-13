@@ -1,5 +1,4 @@
-App = {
-  web3Provider: null,
+App = {  web3Provider: null,
   contracts: {},
 
   init: async function() {

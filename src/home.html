@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tec Ride</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <style>
+    /* Change nav-item color */
+    .nav-link {
+      color: white;
+    }
+
+    .nav-link:hover {
+      color: gray;
+    }
+
+    /* Change navbar-brand color */
+    .navbar-brand {
+      color: white;
+    }
+
+    .navbar-brand:hover {
+      color: gray;
+    }
+
+    .navbar-text { 
+      color: white;
+    }
+    
+
+  </style>
+  </head
+  <body>
+    <!-- Navbar section starts -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Tec Ride</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ride.html">New ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            dApp for Tec students
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar sections ends -->
+
+    <!-- Title section starts -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br></br>
+          <h1 class="text-center">Tec Ride</h1>
+          <p class="text-center">
+            The new way to travel.
+          </p>
+          <hr/>
+        </div>
+      </div>
+    </div>
+    <!-- Title section ends -->
+
+    <!-- Main section starts -->
+    <div class="container">
+      <div id="ridesRow" class="row">
+      </div>
+    </div>
+    <!-- Main section ends -->
+
+    <!-- Card section starts -->
+    <div id="rideTemplate" style="display: none;">
+      <div class="col-md-3 mb-4">
+
+        <div class="card" style="width: 18rem;">
+          <img src="./images/boxer.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">User 0</h5>
+            <strong>Start time</strong>: <span class="ride-startTime">6/03/2022 20:12:34</span><br/>
+            <strong>Positions</strong>: <span class="ride-positions">3</span><br/>
+            <strong>Destination</strong>: <span class="ride-destination">La Narvarte</span><br/>
+            <strong>Cost</strong>: <span class="ride-cost">0.05</span> ETH<br/>
+            <strong>Timer</strong>: <span class="ride-sec" id="minutes"></span>:<span id="seconds"></span><br/><br/>
+            <button class="btn btn-success btn-reserve" type="button" data-id="0">Reserve</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Card sections ends -->    
+
+    
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Old jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
