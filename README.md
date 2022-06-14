@@ -49,7 +49,7 @@ npm run dev
 
 
 
-## Project Contributors
+# Project Contributors
 
 Mónica Lara Pineda A01655306
 
