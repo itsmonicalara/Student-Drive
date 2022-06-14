@@ -45,12 +45,6 @@ npm run dev
 6. Insert ETH as the currency of the blockchain.
 7. Access the [Metamask](https://metamask.io/) plugin login using the port and user taken from [Ganache](https://trufflesuite.com/ganache/).
 
-## Contracts
-
-
-## Transactions
-
-
 
 # Project Contributors
 
