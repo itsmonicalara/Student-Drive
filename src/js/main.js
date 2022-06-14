@@ -130,6 +130,7 @@ sigIn_auth_ride.addEventListener('click', e =>{
     text_2.style.display = "block";
     form_ride.style.display = "block";
     ride_auth.style.display = "none";
+    card_mongo.style.display = "none";
 });
 
 sigIn_auth_Home.addEventListener('click', e =>{
@@ -138,4 +139,5 @@ sigIn_auth_Home.addEventListener('click', e =>{
     text_2.style.display = "none";
     form_ride.style.display = "none";
     ride_auth.style.display = "block";
+    card_mongo.style.display = "block";
 });
