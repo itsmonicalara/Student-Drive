@@ -1,4 +1,4 @@
-# Tec-Ride
+# Student-Drive
 
 Web application based on blockchain that allows users to offer and accept rides through a bidding system and using ethereum as currency.
 
@@ -10,17 +10,20 @@ Having installed and added the plugin of [Metamask](https://metamask.io/).
 
 Having installed the latest version of [Ganache](https://trufflesuite.com/ganache/).
 
-## How to run
+## Installation
 
 The following commands must be run inside the project terminal.
 
-To install all necessary dependencies
+To install all necessary dependencies.
 ```bash
-npm install -g truffle
 npm i 
 ```
+To install truffle. 
+```bash
+npm install -g truffle
+```
 
-To run the migrations folder which contains all the necessary contracts for the application
+To run the migrations which allow the deployment contracts to the Ethereum network.
 ```bash
 truffle compile
 truffle migrate
