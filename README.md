@@ -10,6 +10,8 @@ Having installed the latest version of [Metamask](https://metamask.io/).
 
 Having installed the latest version of [Ganache](https://trufflesuite.com/ganache/).
 
+Having installed the latest version of [MongoDB](https://www.mongodb.com/try/download/community).
+
 ## Installation
 
 The following commands must be run inside the project terminal.
