@@ -23,7 +23,7 @@ To install truffle.
 npm install -g truffle
 ```
 
-To run the migrations which allow the deployment contracts to the Ethereum network.
+To run the migrations which allow the deployment of contracts to the Ethereum network.
 ```bash
 truffle compile
 truffle migrate
@@ -44,6 +44,7 @@ npm run dev
 7. Access the [Metamask](https://metamask.io/) plugin login using the port and user taken from [Ganache](https://trufflesuite.com/ganache/).
 
 ## Contracts
+
 
 ## Transactions
 
